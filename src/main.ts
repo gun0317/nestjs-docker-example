@@ -7,6 +7,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.listen(DEFAULT_PORT);
   const nodeEnv = process.env.NODE_ENV;
-  console.log(`server opened in localhost:${DEFAULT_PORT}. NODE_ENV is ${nodeEnv}`);
+  console.log(`Server opened in localhost:${DEFAULT_PORT}. NODE_ENV is ${nodeEnv}`);
 }
 bootstrap();
